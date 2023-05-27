@@ -1,0 +1,92 @@
+@media only screen and (min-width: 768px){
+    .design-container{
+        width: 90%;
+
+        header{ 
+            border-radius: 20px; 
+            margin-top: 20px;
+        }
+
+        .content{
+            grid-template-columns: 100%;
+
+            .card{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .img-container{ width: 50%; }
+
+                figcaption{ width: 50%; }
+            }
+        }
+        .design-links{
+            grid-template-rows: repeat(2, 250px);
+            margin-bottom: 300px;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .design-container{
+        .content{
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+
+            .card{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .img-container{ width: 100%; }
+
+                figcaption{
+                    width: 100%;
+                    height: 180px;
+                    padding: 30px 10px;
+
+                    h4{ margin: 0 auto 15px; }
+
+                    p{
+                        min-width: 250px;
+                        word-wrap: break-word;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        .design-links{
+            min-width: 900px;
+            grid-template-columns: 50% 50%;
+            margin-bottom: -250px;
+            padding: 0;
+            column-gap: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .design-container{
+        .design-links{
+            grid-template-rows: repeat(2, 400px);
+            margin: 0 auto -370px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .design-container{
+        .content{
+            width: 80%;
+            margin: auto;
+            grid-template-columns: repeat(3, calc(30% + 10px));
+        }
+
+        .design-links{
+            min-width: 1000px;
+            column-gap: 10px;
+            grid-template-columns: repeat(2, calc(35% + 60px));
+        }
+    }
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
+:root {
+  --peach: hsl(11, 73%, 66%);
+  --light-peach: hsl(11, 100%, 80%);
+  --black: hsl(270, 3%, 11%);
+  --dark-gray: hsl(264, 5%, 20%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(210, 17%, 95%);
+}
+
+*, html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+#root {
+  height: 100vh;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 25px 3.5% 20px;
+}
+
+header nav .logo img {
+  margin-top: 3px;
+  width: 10rem;
+}
+
+header nav .icons button {
+  border: none;
+  outline: transparent;
+  background-color: none;
+}
+
+header nav .icons button img {
+  width: 24px;
+  height: 20px;
+}
+
+header nav .desktop-navlist {
+  display: none;
+}
+
+header nav .mobile-navlist {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: var(--black);
+  -webkit-transition: 1s ease width;
+  transition: 1s ease width;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+header nav .mobile-navlist ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header nav .mobile-navlist ul li {
+  margin: 20px 0 20px 25px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+header nav .mobile-navlist ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  header nav {
+    padding: 30px 2% 25px;
+  }
+  header nav .logo img {
+    padding-top: 5px;
+  }
+  header nav .icons,
+  header nav .mobile-navlist {
+    display: none;
+  }
+  header nav .desktop-navlist {
+    display: block;
+  }
+  header nav .desktop-navlist ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  header nav .desktop-navlist ul li {
+    display: inline-block;
+    margin-left: 25px;
+  }
+  header nav .desktop-navlist ul li a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    letter-spacing: 2px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,216 @@
+.footer {
+    background-color: c.$black;
+    color: white;
+    width: 100%;
+    margin-top: 250px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+
+    .foot-head {
+        background: url('../../assets/shared/desktop/bg-pattern-call-to-action.svg') c.$peach no-repeat left center;
+        background-size: cover;
+        width: 90%;
+        max-width: 1400px;
+        border-radius: 10px;
+        position: relative;
+        top: -200px;
+        text-align: center;
+        padding: 60px 0;
+        margin-bottom: -120px;
+        grid-template-rows: auto auto;
+
+        div {
+            width: 100%;
+
+            h1 {
+                font-size: clamp(35px, 2vw, 45px);
+                line-height: 2.7rem;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            p {
+                padding: 0px 10px;
+                max-width: 300px;
+                margin: 20px auto;
+            }
+        }
+
+        .foot-btn {
+            button {
+                @extend .white-buttons;
+                transition: .5s ease background;
+                margin-top: 20px;
+                transition: .5s ease background;
+            }
+
+            button:hover {
+                @extend .orange-buttons;
+            }
+        }
+    }
+
+    .foot-nav {
+        width: 100%;
+        text-align: center;
+
+        nav {
+            .logo>a>img {
+                margin: 30px 0 40px;
+                width: 15rem;
+            }
+
+            hr {
+                border: 1px solid c.$dark-gray;
+                border-bottom: none;
+            }
+
+            .footer-navlist {
+                a {
+                    display: block;
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 20px;
+                    letter-spacing: 3px;
+                    margin: 30px 0;
+                }
+            }
+        }
+    }
+
+    address {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+
+        .address {
+            color: gray;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        .foot-icon {
+            a {
+                margin: 0 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-container {
+        .foot-head {
+            background-size: 125%;
+
+            div {
+                p {
+                    max-width: 470px;
+                }
+            }
+        }
+
+        .foot-nav,
+        address {
+            width: 100%;
+            max-width: 1400px;
+
+        }
+
+        .foot-nav {
+            border-bottom: 1px solid c.$dark-gray;
+            padding-bottom: 10px;
+
+            nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .logo>a>img {
+                    width: 15rem;
+                    margin: 25px 0 0;
+                }
+
+                hr {
+                    display: none;
+                }
+
+                .footer-navlist {
+                    a {
+                        display: inline-block;
+                        font-size: 14px;
+                        margin: 30px 10px;
+                    }
+                }
+            }
+        }
+
+        address {
+            margin-top: 40px;
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: auto auto auto;
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer-container {
+        .foot-head {
+            background-position: right center;
+            background-size: 80%;
+            width: 95%;
+
+            text-align: left;
+            grid-template-columns: 70% 30%;
+            padding: 60px 100px;
+
+            div {
+                padding: 0px 0px;
+
+                h1 {
+                    width: 400px;
+                }
+
+                h1,
+                p {
+                    margin: 20px 0;
+                }
+            }
+
+            .foot-btn {
+                margin-top: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                button {
+                    margin-top: 0;
+                }
+            }
+
+        }
+
+        .foot-nav,
+        address {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .footer-container {
+        .foot-head {
+            width: calc(70% + 50px);
+        }
+    }
+}

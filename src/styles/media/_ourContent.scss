@@ -1,0 +1,67 @@
+@media only screen and (min-width: 768px){
+    .ourContent-container{
+        grid-template-columns: calc(90% - 10px);
+        justify-content: center;
+        margin: 20px 0 300px;
+
+        .card{
+            border-radius: 20px;
+            overflow: hidden;
+
+
+            figcaption{ 
+                background-position: top 20% right calc(-100% - -50px); 
+            }
+        }
+
+        .hero-image{ height: auto;}
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .ourContent-container{
+        .card{
+            flex-direction: row;
+
+            .hero-image{ 
+                width: 40%;
+                height: 100%; 
+            }
+
+            figcaption{ width: 60%; padding: 100px 0;}
+
+            figcaption { 
+                p { 
+                    max-width: 480px;
+                    margin:  auto;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+
+        .card:nth-child(2){ flex-direction: row-reverse; }
+
+        .illus-container{
+            grid-template-columns: repeat(3, calc(30% + 20px));
+            justify-content: center;
+
+
+            .illus-content{
+                .illus-image{
+                    img{
+                        background-image: url('../../assets/about/desktop/bg-pattern-hero-about-desktop.svg');
+                        background-size: 100%;
+                        background-position: top center;
+                        max-width: 80%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1400px){
+    .ourContent-container{
+        grid-template-columns: calc(70% - 10px);
+    }
+}

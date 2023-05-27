@@ -1,0 +1,195 @@
+@use '../abstracts/colors' as c;
+
+.home-container {
+    width: 100%;
+    color: c.$white;
+
+    //Card Container
+    .card-container {
+        background: url('../../assets/home/desktop/bg-pattern-hero-home.svg') c.$peach;
+        background-repeat: no-repeat;
+        background-position: top 120px left -50px;
+        background-size: cover;
+    }
+
+    .card {
+        display: grid;
+        grid-template-rows: 550px 450px;
+        grid-template-columns: 100%;
+        row-gap: 30px;
+        overflow: hidden;
+
+        .card-info {
+            text-align: center;
+            margin-top: 90px;
+
+            h1 {
+                margin: 0 auto;
+                max-width: 450px;
+                font-size: clamp(2rem, 5vw, 3rem);
+                line-height: 3rem;
+            }
+
+            p {
+                margin: 20px auto;
+                max-width: 380px;
+                font-size: 18px;
+                line-height: 2rem;
+            }
+
+            button {
+                @extend .white-buttons;
+                transition: .5s ease background;
+            }
+
+            button:hover {
+                @extend .orange-buttons;
+            }
+        }
+
+        .card-img {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 75%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 700px;
+            }
+        }
+    }
+
+    //Project Container
+    .project-container {
+        display: grid;
+        grid-template-rows: repeat(3, 350px);
+        grid-template-columns: 100%;
+        column-gap: 0px;
+        row-gap: 30px;
+        justify-content: center;
+        padding: 150px 15px;
+
+        .web-design,
+        .app-design,
+        .graphic-design {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+
+            .overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.439);
+                z-index: -1;
+                transition: .5s ease;
+            }
+
+            picture {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: -2;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: .5s ease;
+                }
+            }
+
+            div {
+                text-align: center;
+
+                h1 {
+                    font-size: clamp(2rem, 5vw, 2.4rem);
+                }
+
+                h3 {
+                    letter-spacing: 7px;
+                    font-size: clamp(18px, 5vw, 20px);
+                    font-weight: 500;
+
+                    .arrow {
+                        border: solid c.$peach;
+                        border-width: 0 4px 4px 0;
+                        display: inline-block;
+                        padding: 6px;
+                        margin: 0;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+
+        .web-design:hover,
+        .app-design:hover,
+        .graphic-design:hover {
+            .overlay {
+                background-color: rgba(236, 83, 56, 0.548);
+            }
+
+            picture {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    .illus-container {
+        display: grid;
+        grid-template-columns: 100%;
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+
+            .illus-image {
+                background: url('../../assets/home/desktop/bg-pattern-hero-home.svg') no-repeat;
+                background-size: 350px;
+                background-position: top center;
+
+                padding: 30px;
+
+                img {
+
+                    display: block;
+                    width: 290px;
+                }
+            }
+
+            .illus-info {
+
+                h1,
+                p {
+                    text-align: center;
+                    color: black;
+                }
+
+                h1 {
+                    margin: 20px 0;
+                    letter-spacing: 10px;
+                    font-size: 30px;
+                }
+
+                p {
+                    max-width: 370px;
+                    font-size: clamp(14px, 2vw, 16px);
+                    margin: 15px 0;
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+}

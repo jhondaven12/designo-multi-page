@@ -1,0 +1,80 @@
+@media only screen and (min-width: 768px){
+    .contactContainer{
+       width: 90%;
+       margin: auto;
+
+       .forms{
+        padding: 0 50px;
+        border-radius: 20px;
+
+            .formIntro{
+                padding: 50px 0;
+                text-align: left;
+
+                p{ margin: 0; }
+            }
+
+            form{
+                text-align: right;
+            }
+       }
+    }
+}
+@media only screen and (min-width: 992px){
+    .contactContainer{
+        .illus-container{
+            grid-template-columns: repeat(3, calc(30% + 20px));
+            justify-content: center;
+
+
+            .illus-content{
+                .illus-image{
+                    img{
+                        background-image: url('../../assets/about/desktop/bg-pattern-hero-about-desktop.svg');
+                        background-size: 100%;
+                        background-position: top center;
+                        max-width: 80%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .contactContainer{
+        margin-top: 20px;
+
+        .forms{
+            display: flex;
+            align-items: center;
+            
+            .formIntro, form { width: 50%; }
+
+            .formIntro{ 
+                padding: 0 20px 0 0;
+
+                p{ 
+                    font-weight: 500;
+                    line-height: 2rem;
+                }
+                
+                h1 { margin: 10px 0;}
+            }
+
+            form{
+                padding: 50px 0 20px;
+                textarea{
+                    height: 150px;
+                }
+            }
+
+        }
+    }
+}
+@media only screen and (min-width: 1400px){
+    .contactContainer{
+        width: 70%;
+    }
+}

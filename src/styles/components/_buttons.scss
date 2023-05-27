@@ -1,0 +1,16 @@
+.white-buttons{
+    background-color: white;
+    outline: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 25px;
+    font-weight: 550;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.orange-buttons{
+    @extend .white-buttons;
+    background-color: hsl(11, 100%, 80%);
+    color: white;
+}
