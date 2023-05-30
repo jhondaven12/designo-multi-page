@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/designo-multi-page/static/css/main.626e85fa.css",
-    "main.js": "/designo-multi-page/static/js/main.792c5b45.js",
+    "main.js": "/designo-multi-page/static/js/main.cb730851.js",
     "static/media/image-change.jpg": "/designo-multi-page/static/media/image-change.3051c97c1dcc2c751755.jpg",
     "static/media/image-boxed-water.jpg": "/designo-multi-page/static/media/image-boxed-water.9348f4ace8db6ac37e27.jpg",
     "static/media/image-photon.jpg": "/designo-multi-page/static/media/image-photon.02f662d755840ae8aad5.jpg",
@@ -58,10 +58,10 @@
     "static/media/icon-hamburger.svg": "/designo-multi-page/static/media/icon-hamburger.a39ae0d1f45acff97a9650b13149528e.svg",
     "static/media/icon-right-arrow.svg": "/designo-multi-page/static/media/icon-right-arrow.7046cd1b7a4a6072a89674a25348f942.svg",
     "main.626e85fa.css.map": "/designo-multi-page/static/css/main.626e85fa.css.map",
-    "main.792c5b45.js.map": "/designo-multi-page/static/js/main.792c5b45.js.map"
+    "main.cb730851.js.map": "/designo-multi-page/static/js/main.cb730851.js.map"
   },
   "entrypoints": [
     "static/css/main.626e85fa.css",
-    "static/js/main.792c5b45.js"
+    "static/js/main.cb730851.js"
   ]
 }
