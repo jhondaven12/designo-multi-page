@@ -12,7 +12,7 @@ import image_real_deal_desktop from '../about/desktop/image-real-deal.jpg';
 import image_world_class_desktop from '../about/desktop/image-world-class-talent.jpg';
 import bg_pattern_hero_desktop from '../about/desktop/bg-pattern-hero-about-desktop.svg';
 
-export default {
+const aboutImage = {
     'image_about_hero_mobile':  image_about_hero_mobile,
     'image_real_deal_mobile':   image_real_deal_mobile,
     'image_world_class_mobile': image_world_class_mobile,
@@ -24,4 +24,6 @@ export default {
     'image_real_deal_desktop':  image_real_deal_desktop,
     'image_world_class_desktop': image_world_class_desktop,
     'bg_pattern_hero_desktop':  bg_pattern_hero_desktop
-};
+}
+
+export default aboutImage;
